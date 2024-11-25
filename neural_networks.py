@@ -294,7 +294,7 @@ def visualize(activation, learning_rate, step_num):
     ani = FuncAnimation(fig, partial(update, mlp=mlp, ax_input=ax_input, ax_hidden=ax_hidden, ax_gradient=ax_gradient, X=X, y=y), frames=step_num//10, repeat=False)
 
     # Save the animation as a GIF
-    ani.save(os.path.join(result_dir, "sigmoid2.gif"), writer='pillow', fps=10)
+    ani.save(os.path.join(result_dir, "visualize.gif"), writer='pillow', fps=10)
     plt.close()
 
 if __name__ == "__main__":
